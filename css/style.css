@@ -168,3 +168,9 @@ nav > ul > li > a {
   font-weight: 700;
   color: #2b3547;
 }
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2b3547;
+}
