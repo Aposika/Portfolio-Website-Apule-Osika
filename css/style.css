@@ -5,6 +5,10 @@
 •	Accent Color (White): #ffffff;
 •	*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -51,7 +55,7 @@ img {
 }
 
 #myWork {
-  color: #ffffff;
+  color: #2b3547;
 }
 
 #myAbout {
@@ -60,7 +64,7 @@ img {
 }
 
 #myContact {
-  color: #000000;
+  color: #2b3547;
 }
 
 a {
@@ -88,7 +92,7 @@ a:focus {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffffff;
-  color: #2b3547; /* needed to override the default link color */
+  color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -112,4 +116,55 @@ a:focus {
 .button.contact:active {
   /* selected link */
   color: #ffffff;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+
+  border-bottom: 3px solid #2b3547;
+}
+
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+selector {
+  position: relative;
+}
+selector {
+  float: right;
+}
+.container {
+  max-width: 1200px;
+}
+/* Layout styling */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  padding: 0 15px;
+}
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2b3547;
 }
