@@ -61,46 +61,38 @@ img {
 #hero {
   /* id selector */
   color: #2b3547;
+  text-align: center;
 }
 
 #contact {
-  color: #2b3547;
+  color: #2b3547 text-align;
+  left: 100%;
 }
 
 a {
-  color: #2b3547;
+  color: #ffffff;
   text-decoration: none; /* No underlining */
 }
 
-a:visited {
-  /* visited link */
-  color: #2b3547;
-}
 a:hover {
   color: #2b3547;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:active {
-  /* selected link */
-  color: #ffffff;
-}
-a:hover,
-a:focus {
-  color: #ffffff;
-  text-decoration: underline;
-}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffffff;
-  color: #ffffff; /* needed to override the default link color */
+  color: #2b3547; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #2b3547; /* width of the border, type, color */
   transition: 0.2s opacity;
+  border: 2px solid #2b3547;
 }
 .button:hover {
-  color: #2b3547;
+  color: #ffffff;
+  background-color: #2b3547;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 .button.contact {
@@ -111,10 +103,6 @@ a:focus {
 }
 .button.contact:hover {
   background-color: #2b3547;
-  color: #ffffff;
-}
-.button.contact:active {
-  /* selected link */
   color: #ffffff;
 }
 
