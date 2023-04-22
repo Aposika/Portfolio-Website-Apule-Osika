@@ -65,8 +65,7 @@ img {
 }
 
 #contact {
-  color: #2b3547 text-align;
-  left: 100%;
+  color: #2b3547;
 }
 
 a {
@@ -108,14 +107,13 @@ a:hover {
 
 header {
   background-color: #ffffff;
-  padding: 10px;
-  margin: 10px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-
+  text-align: unset;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
   border-bottom: 3px solid #2b3547;
+  width: 100%;
 }
 
 selector {
@@ -136,6 +134,7 @@ header {
   text-align: unset;
   padding: 10px 0;
   position: relative;
+  width: 100%;
 }
 
 .container {
