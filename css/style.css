@@ -67,6 +67,7 @@ img {
 
 #contact {
   color: #2b3547;
+  font-size: 20px;
 }
 
 a {
@@ -87,14 +88,17 @@ a:hover {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #2b3547; /* width of the border, type, color */
-  transition: 0.2s opacity;
   border: 2px solid #2b3547;
+  transition: 0.9s opacity;
 }
+
 .button:hover {
   color: #ffffff;
   background-color: #2b3547;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  opacity: 0.8;
+  text-decoration: underline;
 }
+
 .button.contact {
   background-color: #ffffff;
   color: #2b3547;
@@ -218,6 +222,9 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
+main {
+  padding-top: 100px;
+}
 
 .col-lg-7 {
   width: 60%;
@@ -225,13 +232,26 @@ Large devices (1024px or larger)
 .col-lg-5 {
   width: 40%;
 }
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+.navtoggle {
+  width: 100%;
+}
+body {
+  font-size: 22px;
+}
+.logo {
+  max-width: 64px;
+  padding-top: 8px;
+}
+.section:hover,
+.section:focus {
+  padding: 0 30px;
+}
+.container {
+  padding: 0 50px;
 }
