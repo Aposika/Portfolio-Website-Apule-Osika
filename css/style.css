@@ -220,7 +220,8 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 45%;
+    margin-top: -20px;
   }
 
   [class*="col-"] {
@@ -248,6 +249,7 @@ Large devices (1024px or larger)
   }
   .col-lg-5 {
     width: 40%;
+    margin-top: -45px;
   }
 
   #profile {
@@ -271,5 +273,9 @@ Large devices (1024px or larger)
   }
   .container {
     padding: 0 50px;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
   }
 }
