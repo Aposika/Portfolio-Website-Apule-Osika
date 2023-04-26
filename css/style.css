@@ -130,6 +130,8 @@ selector {
 }
 .container {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Layout styling */
 header {
@@ -192,66 +194,82 @@ main {
   display: block;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-}
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
+  .col-md-6 {
+    width: 50%;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
-main {
-  padding-top: 100px;
-}
+  main {
+    padding-top: 100px;
+  }
 
-.col-lg-7 {
-  width: 60%;
-}
-.col-lg-5 {
-  width: 40%;
-}
+  .col-lg-7 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
 
-#profile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.navtoggle {
-  width: 100%;
-}
-body {
-  font-size: 22px;
-}
-.logo {
-  max-width: 64px;
-  padding-top: 8px;
-}
-.section:hover,
-.section:focus {
-  padding: 0 30px;
-}
-.container {
-  padding: 0 50px;
+  #profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navtoggle {
+    width: 100%;
+  }
+  body {
+    font-size: 22px;
+  }
+  .logo {
+    max-width: 64px;
+    padding-top: 8px;
+  }
+  .section:hover,
+  .section:focus {
+    padding: 0 30px;
+  }
+  .container {
+    padding: 0 50px;
+  }
 }
