@@ -155,10 +155,6 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -205,6 +201,10 @@ main {
   display: table;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -238,6 +238,18 @@ Medium devices (640px and larger)
 
   .logo {
     max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 }
 
