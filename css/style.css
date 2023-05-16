@@ -137,7 +137,7 @@ selector {
 header {
   background-color: #ffffff;
   text-align: unset;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
 }
@@ -153,6 +153,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -170,7 +171,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 10px;
 }
 
 #hero {
@@ -203,6 +204,32 @@ main {
 
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /* ==============================
@@ -247,7 +274,6 @@ Medium devices (640px and larger)
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-
   .navtoggle li:last-child {
     display: none;
   }
